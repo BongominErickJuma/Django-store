@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <style>
+      body {
+        border-left: 2px solid #1a8cd8;
+        padding: 1em;
+      }
+      ul {
+        padding: 0 1em;
+      }
+      ul > li {
+        list-style-type: circle;
+      }
+      .header {
+        font-size: xx-large;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .title_header {
+        color: #1a8cd8;
+      }
+
+      .space {
+        width: 20px !important;
+        text-align: center;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <code class="header">Test Result</code>
+
+    <code class="title_header">Products</code>
+    <ul>
+      {% for product in products %}
+      <li>
+        <!-- <code
+          ><small>{{product.title}}<span class="space">.</span>{{product.collection.title}}</small></code
+        > -->
+        <code
+          ><small>{{product.id}}<span class="space">.</span>{{product.customer.first_name}}</small></code
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
