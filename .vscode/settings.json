@@ -1,4 +1,16 @@
 {
-  "python.pythonPath": "C:\\Users\\cognosphere\\.virtualenvs\\Storefront-hwoI-6Ap\\Scripts\\python.exe",
-  "python.analysis.typeCheckingMode": "off"
+  "python.defaultInterpreterPath": "C:\\Users\\cognosphere\\.virtualenvs\\Storefront-hwoI-6Ap\\Scripts\\python.exe",
+  "python.analysis.typeCheckingMode": "off",
+
+  // Format Python files using Black
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+
+  // Organize imports automatically using isort
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "python.sortImports.path": "isort"
 }
