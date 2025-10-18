@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     "tags",
     "likes",
     "core",
-    "worktracker",
 ]
 
 MIDDLEWARE = [
